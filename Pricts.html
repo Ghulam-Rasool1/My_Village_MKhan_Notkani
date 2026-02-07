@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="width:800px; height:220px; overflow:hidden; border-radius:10px;">
+  <div style="display:flex; width:900px; animation: slide 9s infinite;">
+    <img src="images/Dj.jpeg" style="width:300px; height:200px; object-fit:cover;">
+    <img src="images/C.jpeg" style="width:300px; height:200px; object-fit:cover;">
+    <img src="images/F.jpeg" style="width:300px; height:200px; object-fit:cover;">
+    <img src="images/Dj.jpeg" style="width:300px; height:200px; object-fit:cover;">
+    <img src="images/C.jpeg" style="width:300px; height:200px; object-fit:cover;">
+    <img src="images/F.jpeg" style="width:300px; height:200px; object-fit:cover;">
+  </div>
+</div>
+
+<style>
+/* slide animation */
+@keyframes slide{
+  0%{transform:translateX(0);}
+  33%{transform:translateX(-300px);}
+  66%{transform:translateX(-600px);}
+  100%{transform:translateX(0);}
+}
+
+/* normal images */
+img{
+  opacity:0.4;             /* default faded */
+  transform:scale(0.9);     /* thodi chhoti */
+  transition:0.5s ease;     /* smooth transition */
+}
+
+/* hover effect */
+img:hover{
+  opacity:1;               /* mouse hover par full opacity */
+  transform:scale(1.05);    /* thodi badi ho jaye */
+}
+</style>
+
+</body>
+</html>
